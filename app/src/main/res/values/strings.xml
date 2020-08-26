@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tweet It</string>
+    <string name="login">Login</string>
+    <string name="login_fail">Failed to login</string>
+
+
+    <string name="twitter_consumer_key">0ckv3LuYhk7LoEGKwtjoXjPti</string>
+    <string name="twitter_consumer_secret">WmPM4ac5cy7Q78MnsUUEMM2mbXbJA5epK0xOWoyrt81BRlLvkr</string>
+    <string name="authenticate">Authenticate</string>
+
+
+</resources>

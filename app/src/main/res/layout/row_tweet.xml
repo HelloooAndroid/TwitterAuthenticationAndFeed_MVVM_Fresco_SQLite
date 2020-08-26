@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="15dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/userImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundedCornerRadius="25dp"
+        app:roundingBorderColor="@color/grey_100"
+        app:roundingBorderWidth="1dp"
+        app:failureImage="@drawable/ic_user"
+        android:elevation="3dp"
+        fresco:placeholderImage="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/userImage"
+        app:layout_constraintTop_toTopOf="@+id/userImage"
+        tools:text="Pratim Pabrekar"></TextView>
+
+    <TextView
+        android:id="@+id/userScreenName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/userName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:text="Pratim_pabrekar"></TextView>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/userImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userScreenName"
+        tools:text="Details will be displayed here \n Details will be displayed here Details will be displayed here Details will be displayed here Details will be displayed here "></TextView>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/media_iv"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/userImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:roundedCornerRadius="10dp"
+        tools:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_comment"
+        android:drawablePadding="8dp"
+        android:textColor="@color/desableText"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="@id/description"
+        app:layout_constraintTop_toBottomOf="@id/media_iv"
+        app:srcCompat="@drawable/ic_twitter_lgo"
+        tools:text="23"></TextView>
+
+    <TextView
+        android:id="@+id/retweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_refresh"
+        android:drawablePadding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/comment"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@+id/comment"
+        app:layout_constraintTop_toTopOf="@id/comment"
+        tools:text="23"></TextView>
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="78dp"
+        android:drawableLeft="@drawable/ic_heart"
+        android:drawablePadding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/retweet"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@+id/retweet"
+        app:layout_constraintTop_toTopOf="@id/retweet"
+        tools:text="23"></TextView>
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_share"
+        android:drawablePadding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/like"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@+id/like"
+        app:layout_constraintTop_toTopOf="@id/like"
+        tools:text=""></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

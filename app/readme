@@ -1,0 +1,30 @@
+Kindle find completed task in below path:
+Path_of_git
+
+Below are the implemented tasks in this module:
+1. Twitter logo animation using custom vector animation
+2. Twitter authentication is provided and user is saved in shared preference for offline mode.
+3. check internet connection and provide indication
+4. MVVM Designing pattern is used.
+5. Live Data is used to manipulate UI on data change
+6. SwipeRefreshLayout is added for better user interaction
+7. ConstraintLayout is used to avoid large vew hirarchy
+8. Lazy loading(Pagination) is used while retrival of data from server
+9. Offline data is saved in SQLite using Google Room library
+10.Application is compatible with change in orientation. Livedata lifecycle is handling the data on the same.
+11.If user in Offline mode and turn the daat on, network change is detected and new data is loaded.
+12.Proguard rules are added for Model files and Room
+13.
+
+load images from tweet and cache it
+Add comments
+
+
+Note : keys are available in string.xml to avoid any twitter setting conflict and Will be removed from twitter developer console in 5-7 days.
+
+
+
+
+
+
+---------------------------------------------------------
