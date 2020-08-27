@@ -9,7 +9,7 @@ object PreferenceHelper {
     public val USER_PREFERENCE = "USER_PREFERENCE"
     val USER_ID = "USER_ID"
     val USER_NAME = "USER_NAME"
-    val USER_SCREEN_NAME = "PASSWORD"
+    val USER_SCREEN_NAME = "USER_SCREEN_NAME"
 
     fun defaultPreference(context: Context): SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
 
