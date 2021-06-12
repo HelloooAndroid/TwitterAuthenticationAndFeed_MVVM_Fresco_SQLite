@@ -15,4 +15,4 @@ Below are the implemented tasks in this module:
 12.Proguard rules are added for Model files and Room
 
 
-<b>Note :</b> keys are available in `string.xml` to avoid any twitter setting conflict and Will be removed from twitter developer console in 5-7 days.
+<b>Note :</b> After building this module on your machine, <b>Do not forget</b> to add your `twitter_consumer_key` and `twitter_consumer_secret` keys in `string.xml`. You can find the same on Twitter developer account settings.
