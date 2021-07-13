@@ -14,5 +14,6 @@ Below are the implemented tasks in this module:
 11. If user in Offline mode and turn the daat on, network change is detected and new data is loaded.
 12. Proguard rules are added for Model files and Room
 
+Interested to see it working? click here 👉: https://drive.google.com/file/d/1mtgTPhxthfhKupGIT4AIy6Dp_OjT1wc4/view?usp=sharing
 
 <b>Note :</b> After building this module on your machine, <b>Do not forget</b> to add your `twitter_consumer_key` and `twitter_consumer_secret` keys in `string.xml`. You can find the same on Twitter developer account settings.
