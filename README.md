@@ -1,4 +1,4 @@
-# Twitter Authentication and Feed (MVVM_Fresco_SQLite)
+# Twitter Authentication and Feed (MVVM_Fresco_Room)
 
 Below are the implemented tasks in this module:
 1. Twitter logo animation using custom vector animation
